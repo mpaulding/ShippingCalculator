@@ -25,6 +25,10 @@ public class ShipItem {
         mTotalCost = 0.0;
     }
 
+    /**
+     * Sets the weight of the ship item.
+     * @param weight The weight in ounces.
+     */
     public void setWeight(int weight)
     {
         mWeight = weight;
