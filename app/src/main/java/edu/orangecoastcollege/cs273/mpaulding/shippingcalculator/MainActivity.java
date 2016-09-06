@@ -8,6 +8,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 import java.text.NumberFormat;
+import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -58,10 +59,10 @@ public class MainActivity extends AppCompatActivity {
     };
     private void displayShipping()
     {
-        NumberFormat currency = NumberFormat.getCurrencyInstance();
+        NumberFormat currency = NumberFormat.getCurrencyInstance(Locale.US);
         mBaseCostTextView.setText(currency.format(shipItem.getBaseCost()));
         mAddedCostTextView.setText(currency.format(shipItem.getAddedCost()));
-        mTotalCostTextView.setText(currency.format(shipItem.getmTotalCost()));
+        mTotalCostTextView.setText(currency.format(8.5));
 
     }
 
