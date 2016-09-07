@@ -45,7 +45,7 @@ public class ShipItem {
         else if (mWeight > BASE_WEIGHT)
             mAddedCost = Math.ceil((mWeight - BASE_WEIGHT) / EXTRA_OUNCES) * ADDED;
 
-        mTotalCost = mBaseCost + mTotalCost;
+        mTotalCost = mBaseCost + mAddedCost;
     }
 
     public double getBaseCost()
@@ -58,7 +58,7 @@ public class ShipItem {
         return mAddedCost;
     }
 
-    public double getmTotalCost()
+    public double getTotalCost()
     {
         return mTotalCost;
     }

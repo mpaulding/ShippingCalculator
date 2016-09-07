@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
         NumberFormat currency = NumberFormat.getCurrencyInstance(Locale.US);
         mBaseCostTextView.setText(currency.format(shipItem.getBaseCost()));
         mAddedCostTextView.setText(currency.format(shipItem.getAddedCost()));
-        mTotalCostTextView.setText(currency.format(8.5));
+        mTotalCostTextView.setText(currency.format(shipItem.getTotalCost()));
 
     }
 
